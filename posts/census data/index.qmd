@@ -1,0 +1,21 @@
+---
+title: "LeBron James Career Breakdown"
+author: "Gregory Ehlinger, Veda Jenetty Immaraj"
+date: "2022-12-05"
+categories: [Tableau, Analysis]
+image: "TableauProject.PNG"
+    
+---
+
+
+<a href="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" download="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" class="download-btn">LeBron James Career Breakdown Tableau Dashboard Download</a>
+
+<a href="LeBron James Cumulative Stats Less Inactive.csv" download="LeBron James Cumulative Stats Less Inactive.csv" class="download-btn">LeBron James Career Breakdown Dataset Download</a>
+
+<iframe
+  width="855"
+  height="650"
+  src="TableauProject.PNG">
+</iframe>
+ 
+For this Project, Jenetty Immaraj and I analyzed the first 18 years of LeBron James's NBA Career. We created a Tableau dashboard to visualize various statistics for each year. Visualizations include profile photo and jerseys, biometrics, statistical averages, shot selection, and geolocation for recorded statistics. 

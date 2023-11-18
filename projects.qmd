@@ -14,7 +14,5 @@ title-block-banner: true
 
 ## Projects
 
-:::{#lab-reports}
-:::
 
 
