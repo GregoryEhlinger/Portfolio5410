@@ -32,7 +32,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Post with Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 5, 2022\n\n\nGregory Ehlinger\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "projects.html#lab-reports",
@@ -51,8 +51,15 @@
   {
     "objectID": "posts/post with code/index.html",
     "href": "posts/post with code/index.html",
-    "title": "Post with Code",
+    "title": "LeBron James Career Breakdown",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nGregory Ehlinger"
+    "text": "LeBron James Career Breakdown Tebaleau Dashboard Download\n\n\n\nFor this Project, Jenetty Immaraj and I analyzed the first 18 years of LeBron James’s NBA Career. We created a Tableau dashboard to visualize various statistics for each year. Visualizations include profile photo and jerseys, biometrics, statistical averages, shot selection, and geolocation for recorded statistics."
+  },
+  {
+    "objectID": "projects.html#projects",
+    "href": "projects.html#projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Learn more about Quarto here."
   }
 ]

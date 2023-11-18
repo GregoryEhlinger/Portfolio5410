@@ -12,10 +12,9 @@ title-block-banner: true
 
 ---
 
-## Lab Reports
+## Projects
 
 :::{#lab-reports}
 :::
 
 
-Learn more about Quarto [here](https://www.quarto.org).
