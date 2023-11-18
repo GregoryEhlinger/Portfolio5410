@@ -1,12 +1,15 @@
 ---
 title: "Projects"
 listing: 
-  - id: lab-reports
-    contents: "lab-reports/*.qmd"
-    type: table
-  - id: meeting-notes
-    contents: "meeting-notes/*.qmd"
-    type: table
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+
 ---
 
 ## Lab Reports
@@ -14,8 +17,5 @@ listing:
 :::{#lab-reports}
 :::
 
-## Meeting Notes
 
-:::{#meeting-notes}
-:::
-Learn more about Quarto [here](https://www.quarto.com).
+Learn more about Quarto [here](https://www.quarto.org).

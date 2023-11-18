@@ -1,0 +1,17 @@
+---
+title: "Post with Code"
+author: "Gregory Ehlinger"
+date: "2022-12-05"
+categories: [news, code, analysis]
+image: "TableauProject.PNG"
+    
+---
+
+
+About this site
+
+```{r}
+1 + 1
+```
+
+Gregory Ehlinger
