@@ -9,3 +9,5 @@ About this site
 ```
 
 Gregory Ehlinger
+
+Learn more about Quarto [here](https://www.quarto.org).

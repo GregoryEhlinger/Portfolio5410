@@ -2,12 +2,12 @@
 title: "Texas Census Data"
 author: "Eric Droegemeier, Gregory Ehlinger, Tserendulam Ichinnorov, Paloma Leonato, Brad Reese"
 date: "2023-04-23"
-categories: [Google Cloud Services, Analysis]
+categories: [Google Cloud Services, Tableau, Analysis]
 image: "Census.PNG"
     
 ---
 
-Analyzes 2021 US Census data to compare income and employment of Foreign-born adults to US-born adults.
+Analyzes 2021 US Census data to compare income and employment of Foreign-born adults to US-born adults who all live in the state of Texas.
 
 <a href="CensusData.pdf" download="CensusData.pdf" class="download-btn">Census Data Presentation Download</a>
 

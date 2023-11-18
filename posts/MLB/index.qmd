@@ -7,7 +7,7 @@ image: "MLB.PNG"
     
 ---
 
-Details the effect of the Pitch Clock on MLB Pitchers during the 2023 MLB Season.
+Analyzes the effect of the Pitch Clock on MLB Pitchers during the 2023 MLB Season.
 
 <iframe
   width="850"
