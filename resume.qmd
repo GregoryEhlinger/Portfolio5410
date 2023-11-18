@@ -1,18 +1,19 @@
 ---
 title: "Resume"
 
+
 ---
 
+![](GregoryEhlingerResume2023.PNG)
+
+  [Download Resume](path/to/GregoryEhlingerResume.pdf)
 
 
 ```{r}
+
  
 
 
 ```
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-!(GregoryEhlingerResume2023.PNG)
 
