@@ -1,6 +1,8 @@
 ---
 title: "Resume"
-
+output:
+  quarto::quarto_html:
+    self_contained: false
 
 ---
 
