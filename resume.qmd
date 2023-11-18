@@ -14,5 +14,5 @@ This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-![Alt Text](GregoryEhlingerResume2023.PNG)
+![Resume Photo](GregoryEhlingerResume2023.PNG)
 
