@@ -1,0 +1,28 @@
+---
+title: "Analysis and Prediction on Cryptocurrencies"
+author: "Eric Droegemeier, Gregory Ehlinger, Tejaskumar Patel, Brad Reese"
+date: "2022-12-13"
+categories: [Excel, Analysis]
+image: "Crypto.PNG"
+    
+---
+
+<a href="CURRENT Copy of Final Presentation ADTA 5130.pptx" download="CURRENT Copy of Final Presentation ADTA 5130.pptx" class="download-btn">Cryptocurrencies Presentation Download</a>
+
+<a href="ADTA 5130 Group D Final Report.docx" download="ADTA 5130 Group D Final Report.docx" class="download-btn">Cryptocurrencies Report Download</a>
+
+<a href="Code.xlsx" download="Code.xlsx" class="download-btn">Cryptocurrencies Dataset Download</a>
+
+<iframe
+  width="850"
+  height="480"
+  src="Crypto.PNG">
+</iframe>
+ 
+For this Project, Eric Droegemeier, Tejaskumar Patel, Brad Reese and I analyzed data for traditional investment options such as stocks, gold, silver, and other commodities and compared it to several cryptocurrencies. We looked for correlations and trends between specific sectors and the price of Bitcoin. We predicted the price of Bitcoin at the end of 2023 based of data preceeding September 2022, For this project, we used Microsoft Office applications such as Excel.
+
+<iframe
+  width="850"
+  height="480"
+  src="Bitcoin23.PNG">
+</iframe>
