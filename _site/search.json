@@ -179,7 +179,7 @@
     "href": "posts/MLB/index.html",
     "title": "The Effect of the Pitch Clock on MLB Pitchers",
     "section": "",
-    "text": "MLB Pitchclock\nMLB Pitchclock Code 2 Download\nMLB Pitchclock Report Download\nMLB PitchclockDataset Download\n\n\nFor this Project, Diana Bergeman, Eric Droegemeier, Triniti Lemmons, Mauricio Sanchez and I analyzed data on the effect of the newly-implemented pitch clock in the MLB on pitchers. We looked for correlations and trends between individual and total pitching statistics from the 2022 and 2023 MLB seasons. We determined that there was minimal to no effect on pitcher performance. We primarily used Python for this project."
+    "text": "Details the effect of the Pitch Clock on MLB Pitchers during the 2023 MLB Season.\n\n\nMLB Pitchclock Code Download\nMLB Pitchclock Code 2 Download\nMLB Pitchclock Report Download\nMLB Pitchclock Dataset Download\nFor this Project, Diana Bergeman, Eric Droegemeier, Triniti Lemmons, Mauricio Sanchez and I analyzed data on the effect of the newly-implemented pitch clock in the MLB on pitchers. We looked for correlations and trends between individual and total pitching statistics from the 2022 and 2023 MLB seasons. We determined that there was minimal to no effect on pitcher performance. We primarily used Python for this project."
   },
   {
     "objectID": "posts/MLB/2023 Data Final Project w plots.html",

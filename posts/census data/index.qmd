@@ -7,6 +7,8 @@ image: "Census.PNG"
     
 ---
 
+Analyzes 2021 US Census data to compare income and employment of Foreign-born adults to US-born adults.
+
 <a href="CensusData.pdf" download="CensusData.pdf" class="download-btn">Census Data Presentation Download</a>
 
 <a href="Code.xlsx" download="Code.xlsx" class="download-btn">Census Data Code Download</a>

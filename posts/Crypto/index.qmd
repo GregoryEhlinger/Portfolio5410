@@ -7,6 +7,8 @@ image: "Crypto.PNG"
     
 ---
 
+Analyzes the trends and pricing of tradition investment options and compares them to cryptocurrencies.
+
 <a href="CURRENT Copy of Final Presentation ADTA 5130.pptx" download="CURRENT Copy of Final Presentation ADTA 5130.pptx" class="download-btn">Cryptocurrencies Presentation Download</a>
 
 <a href="ADTA 5130 Group D Final Report.docx" download="ADTA 5130 Group D Final Report.docx" class="download-btn">Cryptocurrencies Report Download</a>

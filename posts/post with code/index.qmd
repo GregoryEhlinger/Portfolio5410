@@ -6,7 +6,7 @@ categories: [Tableau, Analysis]
 image: "TableauProject.PNG"
     
 ---
-
+Analyzes the statistics from LeBron James's first 18 seasons in the NBA.
 
 <a href="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" download="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" class="download-btn">LeBron James Career Breakdown Tableau Dashboard Download</a>
 
