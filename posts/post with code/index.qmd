@@ -8,7 +8,9 @@ image: "TableauProject.PNG"
 ---
 
 
-<a href="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" download="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" class="download-btn">LeBron James Career Breakdown Tebaleau Dashboard Download</a>
+<a href="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" download="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" class="download-btn">LeBron James Career Breakdown Tableau Dashboard Download</a>
+
+<a href="LeBron James Cumulative Stats Less Inactive.csv" download="LeBron James Cumulative Stats Less Inactive.csv" class="download-btn">LeBron James Career Breakdown Dataset Download</a>
 
 <iframe
   width="855"
