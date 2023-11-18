@@ -1,11 +1,21 @@
 ---
 title: "Projects"
+listing: 
+  - id: lab-reports
+    contents: "lab-reports/*.qmd"
+    type: table
+  - id: meeting-notes
+    contents: "meeting-notes/*.qmd"
+    type: table
 ---
 
-About this site
+## Lab Reports
 
-```{r}
-1 + 1
-```
+:::{#lab-reports}
+:::
 
-Gregory Ehlinger
+## Meeting Notes
+
+:::{#meeting-notes}
+:::
+Learn more about Quarto [here](https://www.quarto.com).

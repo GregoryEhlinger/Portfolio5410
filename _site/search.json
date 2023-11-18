@@ -25,7 +25,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nGregory Ehlinger"
+    "text": "No matching items"
   },
   {
     "objectID": "blog.html",
@@ -33,5 +33,19 @@
     "title": "Blog",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "projects.html#lab-reports",
+    "href": "projects.html#lab-reports",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "projects.html#meeting-notes",
+    "href": "projects.html#meeting-notes",
+    "title": "Projects",
+    "section": "Meeting Notes",
+    "text": "Meeting Notes\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nLearn more about Quarto here."
   }
 ]
