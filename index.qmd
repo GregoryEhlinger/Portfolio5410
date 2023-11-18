@@ -1,11 +1,34 @@
 ---
 title: "Gregory Ehlinger"
+image: gregory.jpg
+resources: GregoryEhlingerResume.pdf
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 15em
+  links:
+  - text: Email
+    icon: envelope
+    href: mailto:gregoryehlinger@my.unt.edu
+  - text: GitHub
+    icon: github
+    href: https://github.com/GregoryEhlinger
+  - text: Resume
+    icon: file-text
+    href: GregoryEhlingerResume.pdf
+  id: ppc
+    
 ---
 
-This is a Quarto website.
+:::{#ppc}
+Gregory Ehlinger is currently persuing my Masters of Science in Advanced Data Analytics at the University of North Texas. He completed his Bachelors of Science in Industrial Distribution from Texas A&M University. For the past 6 years, he has been working as an Operations Associate and Inside Sales for a plumbing wholesaler servcing the North Texas Region.  
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Competent in handling cost analysis, quality documentation, process improvement & implementation, procurement, upstream &  downstream communication, and direct interaction with customers & vendors. 
+
+Proficient in Tableau, Eclipse, RStudio, Python, Eclipse, and Microsoft Office.
+
+:::
 
 ```{r}
-1 + 1
+
 ```

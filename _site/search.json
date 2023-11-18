@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Gregory Ehlinger",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Gregory Ehlinger is currently persuing my Masters of Science in Advanced Data Analytics at the University of North Texas. He completed his Bachelors of Science in Industrial Distribution from Texas A&M University. For the past 6 years, he has been working as an Operations Associate and Inside Sales for a plumbing wholesaler servcing the North Texas Region.\nCompetent in handling cost analysis, quality documentation, process improvement & implementation, procurement, upstream & downstream communication, and direct interaction with customers & vendors.\nProficient in Tableau, Eclipse, RStudio, Python, Eclipse, and Microsoft Office.\n \n  \n   \n  \n    \n     Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     Resume"
   },
   {
     "objectID": "about.html",
@@ -12,5 +19,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nGregory Ehlinger"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nGregory Ehlinger"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
   }
 ]
