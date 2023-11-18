@@ -3,13 +3,16 @@ title: "Resume"
 output:
   quarto::quarto_html:
     self_contained: false
+    
+
 
 ---
 
-![](GregoryEhlingerResume2023.PNG)
-
-  [Download Resume](path/to/GregoryEhlingerResume.pdf)
-
+<iframe
+  width="800"
+  height="800"
+  src="GregoryEhlingerResume.pdf">
+</iframe>
 
 ```{r}
 
