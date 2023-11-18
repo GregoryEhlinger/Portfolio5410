@@ -67,7 +67,7 @@
     "href": "posts/census data/index.html",
     "title": "Texas Census Data",
     "section": "",
-    "text": "Census Data Presentation Download\nCensus Data Code Download\nCensus Data Linear Regression Model File Download\n\n\nFor this Project, Jenetty Immaraj and I analyzed the first 18 years of LeBron James’s NBA Career. We created a Tableau dashboard to visualize various statistics for each year. Visualizations include profile photo and jerseys, biometrics, statistical averages, shot selection, and geolocation for recorded statistics."
+    "text": "Census Data Presentation Download\nCensus Data Code Download\n\n\nFor this Project, Eric Droegemeier, Tserendulam Ichinnorov, Paloma Leonato, Brad Reese and I analyzed the census data for the state of Texas in 2021. We specifcally wanted to compare the income and employment of workers who were foreign-born to those of workers born in the United States. For this project, we used Google Cloud Services, Tableau, and Python."
   },
   {
     "objectID": "posts/census data/adta5240_linear_regression.html",

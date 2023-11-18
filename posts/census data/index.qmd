@@ -1,21 +1,20 @@
 ---
-title: "LeBron James Career Breakdown"
-author: "Gregory Ehlinger, Veda Jenetty Immaraj"
-date: "2022-12-05"
-categories: [Tableau, Analysis]
-image: "TableauProject.PNG"
+title: "Texas Census Data"
+author: "Eric Droegemeier, Gregory Ehlinger, Tserendulam Ichinnorov, Paloma Leonato, Brad Reese"
+date: "2023-04-23"
+categories: [Google Cloud Services, Analysis]
+image: "Census.PNG"
     
 ---
 
+<a href="CensusData.pdf" download="CensusData.pdf" class="download-btn">Census Data Presentation Download</a>
 
-<a href="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" download="ADTA 5250 Final Project Gregory Ehlinger Jenetty Immaraj Final Copy 1.twbx" class="download-btn">LeBron James Career Breakdown Tableau Dashboard Download</a>
-
-<a href="LeBron James Cumulative Stats Less Inactive.csv" download="LeBron James Cumulative Stats Less Inactive.csv" class="download-btn">LeBron James Career Breakdown Dataset Download</a>
+<a href="Code.xlsx" download="Code.xlsx" class="download-btn">Census Data Code Download</a>
 
 <iframe
-  width="855"
-  height="650"
-  src="TableauProject.PNG">
+  width="850"
+  height="450"
+  src="Census.PNG">
 </iframe>
  
-For this Project, Jenetty Immaraj and I analyzed the first 18 years of LeBron James's NBA Career. We created a Tableau dashboard to visualize various statistics for each year. Visualizations include profile photo and jerseys, biometrics, statistical averages, shot selection, and geolocation for recorded statistics. 
+For this Project, Eric Droegemeier, Tserendulam Ichinnorov, Paloma Leonato, Brad Reese and I analyzed the census data for the state of Texas in 2021. We specifcally wanted to compare the income and employment of workers who were foreign-born to those of workers born in the United States. For this project, we used Google Cloud Services, Tableau, and Python.
