@@ -9,9 +9,5 @@ listing:
     filter-ui: false
 ---
 
-## Posts
-
-:::{#lab-reports}
-:::
 
 

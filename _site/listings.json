@@ -1,7 +1,10 @@
 [
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/blogs/First Blog/index.html",
+      "/blogs/Second Blog/index.html"
+    ]
   },
   {
     "listing": "/projects.html",

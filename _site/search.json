@@ -25,14 +25,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "quarto::doc_list( dir = “path/to/your/documents”, exclude = c(“*.ipynb”, “post”) )"
+    "text": "The Effect of the Pitch Clock on MLB Pitchers\n\n\n\n\n\n\n\nPython\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2023\n\n\nDiana Bergeman, Eric Droegemeier, Gregory Ehlinger, Triniti Lemmons, Mauricio Sanchez\n\n\n\n\n\n\n  \n\n\n\n\nAnalysis and Prediction on Donations\n\n\n\n\n\n\n\nSAS Enterprise Miner\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2023\n\n\nEric Droegemeier, Gregory Ehlinger, Veda Jenetty Immaraj\n\n\n\n\n\n\n  \n\n\n\n\nTexas Census Data\n\n\n\n\n\n\n\nGoogle Cloud Services\n\n\nTableau\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 23, 2023\n\n\nEric Droegemeier, Gregory Ehlinger, Tserendulam Ichinnorov, Paloma Leonato, Brad Reese\n\n\n\n\n\n\n  \n\n\n\n\nAnalysis and Prediction on Cryptocurrencies\n\n\n\n\n\n\n\nExcel\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2022\n\n\nEric Droegemeier, Gregory Ehlinger, Tejaskumar Patel, Brad Reese\n\n\n\n\n\n\n  \n\n\n\n\nLeBron James Career Breakdown\n\n\n\n\n\n\n\nTableau\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 5, 2022\n\n\nGregory Ehlinger, Veda Jenetty Immaraj\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "First Blog\n\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2023\n\n\nGregory Ehlinger\n\n\n\n\n\n\n  \n\n\n\n\nFirst Blo\n\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2023\n\n\nGregory Ehlinger\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#lab-reports",
@@ -194,5 +194,12 @@
     "title": "Analysis and Prediction on Donations",
     "section": "",
     "text": "Analyzes the history on donations to a non-profit organization and compare the performance of prediction models for future donations.\nDonation Project Download\nDonation Report Download\nNon-profit Donation Dataset Download\n\n\nFor this Project, Eric Droegemeier, Jenetty Immaraj, and I analyzed data on historical donation data. We then created several predicted models and compared which model performed the best.We then used the best performing model to predict which former donors to target to maximize donor dollars for the next donation marketing campaign. For this project, we used SAS Enterprise Miner."
+  },
+  {
+    "objectID": "blogs/First Blog/index.html",
+    "href": "blogs/First Blog/index.html",
+    "title": "First Blog",
+    "section": "",
+    "text": "Test\n\n\nFor this Project, Eric Droegemeier, Jenetty Immaraj, and I analyzed data on historical donation data. We then created several predicted models and compared which model performed the best.We then used the best performing model to predict which former donors to target to maximize donor dollars for the next donation marketing campaign. For this project, we used SAS Enterprise Miner."
   }
 ]

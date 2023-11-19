@@ -12,6 +12,5 @@ title-block-banner: true
 
 ---
 
-## Projects
 
 
