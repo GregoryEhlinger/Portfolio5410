@@ -1,5 +1,5 @@
 ---
-title: "First Blo"
+title: "Second Blog"
 author: "Gregory Ehlinger"
 date: "2023-11-18"
 image: "rstudio.png"
