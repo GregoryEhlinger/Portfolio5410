@@ -1,5 +1,5 @@
 ---
-title: "First Blog"
+title: "Intro to EDA in RStudio"
 author: "Gregory Ehlinger"
 date: "2023-11-17"
 image: "rstudio.png"
