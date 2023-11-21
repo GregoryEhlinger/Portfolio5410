@@ -149,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploratory-data-analysis-in-r" id="toc-exploratory-data-analysis-in-r" class="nav-link active" data-scroll-target="#exploratory-data-analysis-in-r">Exploratory Data Analysis in R</a></li>
+  <li><a href="#exploratory-data-analysis-in-rstudio" id="toc-exploratory-data-analysis-in-rstudio" class="nav-link active" data-scroll-target="#exploratory-data-analysis-in-rstudio">Exploratory Data Analysis in RStudio</a></li>
   </ul>
 </nav>
     </div>
@@ -185,9 +185,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="exploratory-data-analysis-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-data-analysis-in-r">Exploratory Data Analysis in R</h2>
-<p>To began Exploratory Data Analysis (EDA) in R, we first must load in our dataset. RStudio comes equipped with several datasets,; so to describe the EDA process in RStudio, I have decided to use the “mtcars” dataset. The “mtcars” dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include “dplyr”, “ggplot2”, and “tidyr”.</p>
+<section id="exploratory-data-analysis-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis-in-rstudio">Exploratory Data Analysis in RStudio</h2>
+<p>Here I will describe the basics of performing EDA in RStudio.</p>
+<p>To began Exploratory Data Analysis (EDA) in R, we first must load in our dataset. RStudio comes equipped with several datasets; so to describe the EDA process in RStudio, I have decided to use the “mtcars” dataset. The “mtcars” dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include “dplyr”, “ggplot2”, and “tidyr”.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Deleting the "#" symbol and running the code will install the package automatically.</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -315,19 +316,109 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>correlation_matrix <span class="ot">&lt;-</span> <span class="fu">cor</span>(mtcars)</span>
 <span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Prints our correlation matrix</span></span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co">#print(correlation_matrix)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(correlation_matrix)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            mpg        cyl       disp         hp        drat         wt
+mpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.68117191 -0.8676594
+cyl  -0.8521620  1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958
+disp -0.8475514  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799
+hp   -0.7761684  0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479
+drat  0.6811719 -0.6999381 -0.7102139 -0.4487591  1.00000000 -0.7124406
+wt   -0.8676594  0.7824958  0.8879799  0.6587479 -0.71244065  1.0000000
+qsec  0.4186840 -0.5912421 -0.4336979 -0.7082234  0.09120476 -0.1747159
+vs    0.6640389 -0.8108118 -0.7104159 -0.7230967  0.44027846 -0.5549157
+am    0.5998324 -0.5226070 -0.5912270 -0.2432043  0.71271113 -0.6924953
+gear  0.4802848 -0.4926866 -0.5555692 -0.1257043  0.69961013 -0.5832870
+carb -0.5509251  0.5269883  0.3949769  0.7498125 -0.09078980  0.4276059
+            qsec         vs          am       gear        carb
+mpg   0.41868403  0.6640389  0.59983243  0.4802848 -0.55092507
+cyl  -0.59124207 -0.8108118 -0.52260705 -0.4926866  0.52698829
+disp -0.43369788 -0.7104159 -0.59122704 -0.5555692  0.39497686
+hp   -0.70822339 -0.7230967 -0.24320426 -0.1257043  0.74981247
+drat  0.09120476  0.4402785  0.71271113  0.6996101 -0.09078980
+wt   -0.17471588 -0.5549157 -0.69249526 -0.5832870  0.42760594
+qsec  1.00000000  0.7445354 -0.22986086 -0.2126822 -0.65624923
+vs    0.74453544  1.0000000  0.16834512  0.2060233 -0.56960714
+am   -0.22986086  0.1683451  1.00000000  0.7940588  0.05753435
+gear -0.21268223  0.2060233  0.79405876  1.0000000  0.27407284
+carb -0.65624923 -0.5696071  0.05753435  0.2740728  1.00000000</code></pre>
+</div>
 </div>
 <p>An alternative way to look at the correlation matrix is by adding color.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creates the correlation matrix but changes the numerical value of the correlation with a color</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Red indicates a negative correlation</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Blue indicates a positive correlation</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(correlation_matrix, <span class="at">method =</span> <span class="st">"color"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creates the correlation matrix but changes the numerical value of the correlation with a color</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Red indicates a negative correlation</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Blue indicates a positive correlation</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(correlation_matrix, <span class="at">method =</span> <span class="st">"color"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>To expand upon the correlations between variables, if we wanted to focus on a single variable, like a target variable. For this example, I will be using “mpg” as the target variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find the variables with the highest absolute correlation with mpg</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>mpg_correlation <span class="ot">&lt;-</span> correlation_matrix[<span class="st">"mpg"</span>, ]</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>abs_correlation <span class="ot">&lt;-</span> <span class="fu">abs</span>(mpg_correlation)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort in descending order</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>sorted_correlation <span class="ot">&lt;-</span> <span class="fu">sort</span>(abs_correlation, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the variables and their absolute correlation with mpg</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(sorted_correlation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      mpg        wt       cyl      disp        hp      drat        vs        am 
+1.0000000 0.8676594 0.8521620 0.8475514 0.7761684 0.6811719 0.6640389 0.5998324 
+     carb      gear      qsec 
+0.5509251 0.4802848 0.4186840 </code></pre>
+</div>
+</div>
+<p>As we can see, weight has the highest absolute correlation to mpg.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a scatterplot between weight and mpg</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>wt, mtcars<span class="sc">$</span>mpg, </span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Scatterplot of Weight vs. MPG"</span>,</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Weight"</span>,</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Miles per Gallon"</span>,</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"green"</span>,</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch=</span> <span class="dv">19</span>) <span class="co">#stylizes the data points on the graph</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Adds the regression line which would in</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">lm</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars), <span class="at">col =</span> <span class="st">"black"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>To find the equation for the black regression line in the scatterplot, use the code below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit a linear regression model</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>lm_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the regression formula</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">summary</span>(lm_model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = mpg ~ wt, data = mtcars)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5432 -2.3647 -0.1252  1.4096  6.8727 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.046 on 30 degrees of freedom
+Multiple R-squared:  0.7528,    Adjusted R-squared:  0.7446 
+F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+</div>
+</div>
+<p>Based on the correlation taken from the matrix of -0.8676594 and this graph, we can see that there is a strong negative relationship between the two variables weight and mpg.</p>
+<p>Additional EDA can be performed on this dataset but this should serve as a basic introduction on how to conduct EDA in RStudio.</p>
 
 
 </section>

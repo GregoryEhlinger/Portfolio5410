@@ -6,9 +6,15 @@ image: "rstudio.png"
     
 ---
 
-## Exploratory Data Analysis in R
+## Exploratory Data Analysis in RStudio
 
-To began Exploratory Data Analysis (EDA) in R, we first must load in our dataset. RStudio comes equipped with several datasets,; so to describe the EDA process in RStudio, I have decided to use the "mtcars" dataset. The "mtcars" dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include "dplyr", "ggplot2", and "tidyr".
+Here I will describe the basics of performing EDA in RStudio.
+
+
+
+
+
+To began Exploratory Data Analysis (EDA) in R, we first must load in our dataset. RStudio comes equipped with several datasets; so to describe the EDA process in RStudio, I have decided to use the "mtcars" dataset. The "mtcars" dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include "dplyr", "ggplot2", and "tidyr".
 
 ```{r}
 
@@ -84,7 +90,7 @@ correlation_matrix <- cor(mtcars)
 correlation_matrix <- cor(mtcars)
 
 # Prints our correlation matrix
-#print(correlation_matrix)
+print(correlation_matrix)
 
 
 
@@ -100,12 +106,52 @@ An alternative way to look at the correlation matrix is by adding color.
 corrplot(correlation_matrix, method = "color")
 
 ```
+To expand upon the correlations between variables, if we wanted to focus on a single variable, like a target variable. For this example, I will be using "mpg" as the target variable. 
 
+```{r}
 
+# Find the variables with the highest absolute correlation with mpg
+mpg_correlation <- correlation_matrix["mpg", ]
+abs_correlation <- abs(mpg_correlation)
 
+# Sort in descending order
+sorted_correlation <- sort(abs_correlation, decreasing = TRUE)
 
+# Print the variables and their absolute correlation with mpg
+print(sorted_correlation)
 
+```
+As we can see, weight has the highest absolute correlation to mpg. 
 
+```{r}
+
+# Create a scatterplot between weight and mpg
+plot(mtcars$wt, mtcars$mpg, 
+     main = "Scatterplot of Weight vs. MPG",
+     xlab = "Weight",
+     ylab = "Miles per Gallon",
+     col = "green",
+     pch= 19) #stylizes the data points on the graph
+
+# Adds the regression line which would in
+abline(lm(mpg ~ wt, data = mtcars), col = "black", lwd = 2)
+
+```
+To find the equation for the black regression line in the scatterplot, use the code below.
+
+```{r}
+
+# Fit a linear regression model
+lm_model <- lm(mpg ~ wt, data = mtcars)
+
+# Print the regression formula
+print(summary(lm_model))
+
+```
+
+Based on the correlation taken from the matrix of -0.8676594 and this graph, we can see that there is a strong negative relationship between the two variables weight and mpg. 
+
+Additional EDA can be performed on this dataset but this should serve as a basic introduction on how to conduct EDA in RStudio.
 
 
 
