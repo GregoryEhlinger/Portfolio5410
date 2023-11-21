@@ -14,7 +14,7 @@ Here I will describe the basics of performing EDA in RStudio.
 
 
 
-To began Exploratory Data Analysis (EDA) in R, we first must load in our dataset. RStudio comes equipped with several datasets; so to describe the EDA process in RStudio, I have decided to use the "mtcars" dataset. The "mtcars" dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include "dplyr", "ggplot2", and "tidyr".
+To began Exploratory Data Analysis (EDA) in RStudio, we first must load in our dataset. RStudio comes equipped with several datasets; so to describe the EDA process in RStudio, I have decided to use the "mtcars" dataset. The "mtcars" dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are helpful with the EDA process include "dplyr", "ggplot2", and "tidyr".
 
 ```{r}
 
