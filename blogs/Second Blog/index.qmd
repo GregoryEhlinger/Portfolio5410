@@ -1,19 +1,70 @@
 ---
-title: "Second Blog"
+title: "Intro to Linear Regression in RStudio"
 author: "Gregory Ehlinger"
 date: "2023-11-18"
 image: "rstudio.png"
     
 ---
 
-Test
+## Linear Regression in RStudio
+
+Here I will describe the basics of creating a linear regression model in RStudio.
 
 
 
-<iframe
-  width="700"
-  height="700"
-  src="rstudio.png">
-</iframe>
- 
-For this Project, Eric Droegemeier, Jenetty Immaraj, and I analyzed data on historical donation data. We then created several predicted models and compared which model performed the best.We then used the best performing model to predict which former donors to target to maximize donor dollars for the next donation marketing campaign. For this project, we used SAS Enterprise Miner.
+
+To create a linear regression model in RStudio, we first must load in our dataset. RStudio comes equipped with several datasets; so to describe the EDA process in RStudio, I have decided to use the "mtcars" dataset. The "mtcars" dataset pulls information from the 1970 Motor Trend US magazine about various characteristics from car models of the time. Some packages that are beneficial to use for the creation of linear regression models include: "knitr", "tidyverse", "dplyr", "ggplot2", "rpart", "rsample", "caret", and "mgcv".
+
+```{r}
+
+# Deleting the "#" symbol and running the code will install the package automatically.
+
+#install.packages("knitr")
+#install.packages("tidyverse")
+#install.packages("dplyr")
+#install.packages("ggplot2")
+#install.packages("rpart")
+#install.packages("rsample")
+#install.packages("caret")
+#install.packages("mgcv")
+
+library(knitr)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(rpart)
+library(rsample)
+library(caret)
+library(mgcv)
+
+# Loads "mtcars" dataset.
+data("mtcars")
+
+```
+
+A cleaned dataset is necessary to create a linear regression model. First we need to see if we have any missing values in the dataset
+
+```{r}
+
+# Structure fo the dataset
+str(mtcars)
+
+# Will print the number of missing values in the dataset
+sum(is.na(mtcars))
+
+```
+In this dataset, we do not have any missing values which means we will be able to proceed without any additional steps. However, if the dataset was missing values, then the missing values would need to be excluded or imputed. 
+
+Building on the EDA we performed on this dataset in the first blog post, "Intro to EDA in RStudio", we will be using mpg as our target variable in our linear regression model.
+
+```{r}
+
+# Load the caret package
+library(caret)
+
+# Set a seed, important in to reproduce the same results
+set.seed(123)
+
+
+
+```

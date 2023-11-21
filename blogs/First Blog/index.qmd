@@ -71,7 +71,17 @@ To find correlations/relationships, we must make sure that our dataset does not 
 sum(is.na(mtcars))
 
 ```
-In this dataset, we do not have any missing values which means we will be able to proceed without any additional steps. However, if the dataset was missing values, then data cleaning would be necessary. To handle missing values, excluding or imputing records with missing values would be necessary. 
+In this dataset, we do not have any missing values which means we will be able to proceed without any additional steps. However, if the dataset was missing values, then data cleaning would be necessary. To handle missing values, excluding or imputing records with missing values would be necessary. Additionally, we need to make sure all the variables are numerical. 
+
+```{r}
+
+# Will print out the structure of the data
+str(mtcars)
+
+
+```
+
+Looking at the structure of the data shows us that all variables are already "num".
 
 To create a correlation matrix, installing the "corrplot" package would be beneficial. 
 
