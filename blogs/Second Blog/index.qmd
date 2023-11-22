@@ -1,7 +1,7 @@
 ---
 title: "Intro to Linear Regression in RStudio"
 author: "Gregory Ehlinger"
-date: "2023-11-18"
+date: "2023-11-21"
 image: "rstudio.png"
     
 ---
@@ -55,7 +55,7 @@ sum(is.na(mtcars))
 ```
 In this dataset, we do not have any missing values which means we will be able to proceed without any additional steps. However, if the dataset was missing values, then the missing values would need to be excluded or imputed. 
 
-Building on the EDA we performed on this dataset in the first blog post, "Intro to EDA in RStudio", we will be using mpg as our target variable in our linear regression model.
+Building on the EDA we performed on this dataset in the first blog post, "Intro to EDA in RStudio", we will be using mpg as our target variable in our linear regression model. Before creating the model, we will need to split our dataset into training and testing sets.
 
 ```{r}
 
@@ -65,6 +65,60 @@ library(caret)
 # Set a seed, important in to reproduce the same results
 set.seed(123)
 
+# Split the data
+split_data <- initial_split(mtcars, prop = 0.7)
+
+# Create the training and testing datasets
+
+train_data <- training(split_data)
+test_data <- testing(split_data)
 
 
 ```
+
+After splitting the data, we can being now make estimates based on the testing data.
+
+```{r}
+
+# Creates the actual linear model
+
+linearmodel <- lm(mpg ~ ., data = train_data)
+
+# Makes predictions based on the training data.
+
+predicted_mpg <- predict(linearmodel, newdata = train_data)
+
+```
+
+In order to calculate the performance of a model, we use a performance metric. One of the most commonly used metrics is MSPE, Mean Squared Prediction Error, which is the average squared difference between the predicted values and the actual values. Ideally we want a lower MSPE which would indicate a better predictive model.
+
+```{r}
+
+# Calculate the Mean Squared Prediction Error (MSPE)
+
+MSPE_Training <- mean((train_data$mpg - predicted_mpg)^2)
+
+print(MSPE_Training)
+
+```
+
+Knowing our MSPE for the training set, we should know compare with the MSPE of our testing set. So we  can use the same approach as before.
+
+```{r}
+
+# Calculate the Mean Squared Prediction Error (MSPE)
+
+# Predict the target variable on the testing set
+
+predicted_mpg_test <- predict(linearmodel, newdata = test_data)
+
+MSPE_Testing <- mean((test_data$mpg - predicted_mpg_test)^2)
+
+print(MSPE_Testing)
+
+```
+So, the MSPE on the testing set provides an evaluation of how well the linear regression model generalizes and predicts on new data. A lower test MSPE would indicate a better predictive performance on the testing set, but in our case we have a higher test MSPE which means our model could be improved and things like overfitting or multicollinearity could be present.
+
+
+
+
