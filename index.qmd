@@ -17,7 +17,7 @@ about:
     icon: file-text
     href: GregoryEhlingerResume.pdf
   id: ppc
-    
+  
 ---
 
 :::{#ppc}
